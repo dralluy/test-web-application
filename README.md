@@ -9,7 +9,7 @@
 
 1. Clone repository from Github: https://github.com/dralluy/test-web-application.git
 2. Generate application: mvn install
-3. Running test: mvn test
+3. Running tests: mvn test
 
 ## Execution
 
@@ -32,13 +32,11 @@ There will be an authetication form if session is needed.
 
 ## Acces to Rest API
 
-Any role:
+### Any role:
 1. Get users:    GET http://localhost:8000/api/users
 2. Get user:     GET http://localhost:8000/api/users/user/{username}
 
-Only ADMIN role:
-1. Create user:  POST http://localhost:8000/api/users 
-	      payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
+### Only ADMIN role:
+1. Create user:  POST http://localhost:8000/api/users payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
 2. Delete user:  DELETE http://localhost:8000/users/user/{username}
-3. Update user:  PUT http://localhost:8000/users/user/{username}
-			  payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
+3. Update user:  PUT http://localhost:8000/users/user/{username} payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
