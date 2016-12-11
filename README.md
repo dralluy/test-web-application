@@ -2,8 +2,8 @@ Test web application for technical test
 
 Prerequisites
 -------------
-JDK 1.8
-Maven
+-JDK 1.8
+-Maven 3
 
 Installation
 ------------
