@@ -1,0 +1,60 @@
+2016-12-11 16:18:12 ERROR WebHttpServer:45 - Error init server 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.net.httpserver.ServerImpl.<init>(ServerImpl.java:100)
+	at sun.net.httpserver.HttpServerImpl.<init>(HttpServerImpl.java:50)
+	at sun.net.httpserver.DefaultHttpServerProvider.createHttpServer(DefaultHttpServerProvider.java:35)
+	at com.sun.net.httpserver.HttpServer.create(HttpServer.java:130)
+	at com.test.webapp.server.WebHttpServer.<init>(WebHttpServer.java:41)
+	at com.test.webapp.WebAppStart.initInfraestructure(WebAppStart.java:44)
+	at com.test.webapp.WebAppStart.main(WebAppStart.java:76)
+2016-12-11 16:19:01 ERROR SessionManager:98 - Session not found: com.test.webapp.session.SessionNotFoundException:  Session not found. ID: fe5d7ee4-3a59-43a5-a9d5-a5b7e4bb1721
+2016-12-11 16:22:15 ERROR SessionManager:98 - Session not found: com.test.webapp.session.SessionNotFoundException:  Session not found. ID: a83eec88-8c7c-4f6d-9fbf-9956acf9a60c
+2016-12-11 16:23:44 ERROR WebHttpServer:45 - Error init server 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.net.httpserver.ServerImpl.<init>(ServerImpl.java:100)
+	at sun.net.httpserver.HttpServerImpl.<init>(HttpServerImpl.java:50)
+	at sun.net.httpserver.DefaultHttpServerProvider.createHttpServer(DefaultHttpServerProvider.java:35)
+	at com.sun.net.httpserver.HttpServer.create(HttpServer.java:130)
+	at com.test.webapp.server.WebHttpServer.<init>(WebHttpServer.java:41)
+	at com.test.webapp.WebAppStart.initInfraestructure(WebAppStart.java:44)
+	at com.test.webapp.WebAppStart.main(WebAppStart.java:76)
+2016-12-11 16:23:51 INFO  WebAppStart:56 - Server is started and listening on port {1}
+2016-12-11 16:24:58 INFO  WebAppStart:56 - Server is started and listening on port 8000
+2016-12-11 16:25:03 ERROR SessionManager:98 - Session not found: com.test.webapp.session.SessionNotFoundException:  Session not found. ID: 4d6e28c9-15f9-49ef-97fa-0b30b38a8727
+2016-12-11 16:25:03 INFO  SessionManager:51 - Session created: 52914ccc-8342-43ba-a367-5cce8d6022f9
+2016-12-11 16:25:03 INFO  AbstractHttpHandler:72 - Executing request RequestContext [uri=/api/users, username=user3, data=null] with response ResponseContext [data=[User [username=user1, roles=PAGE_1,ADMIN], User [username=user2, roles=PAGE_2], User [username=user3, roles=PAGE_3]], status=OK, sessionId=null] 
+2016-12-11 16:25:47 INFO  AbstractHttpHandler:72 - Executing request RequestContext [uri=/api/users, username=user3, data=null] with response ResponseContext [data=[User [username=user1, roles=PAGE_1,ADMIN], User [username=user2, roles=PAGE_2], User [username=user3, roles=PAGE_3]], status=OK, sessionId=null] 
+2016-12-11 16:26:22 INFO  SessionManager:159 - Session updated: 52914ccc-8342-43ba-a367-5cce8d6022f9
+2016-12-11 16:26:22 ERROR AbstractHttpHandler:74 - Resource access unauthorized 
+2016-12-11 16:26:25 INFO  SessionManager:159 - Session updated: 52914ccc-8342-43ba-a367-5cce8d6022f9
+2016-12-11 16:26:25 ERROR AbstractHttpHandler:74 - Resource access unauthorized 
+2016-12-11 16:26:25 INFO  SessionManager:159 - Session updated: 52914ccc-8342-43ba-a367-5cce8d6022f9
+2016-12-11 16:26:25 ERROR AbstractHttpHandler:74 - Resource access unauthorized 
+2016-12-11 16:26:28 INFO  SessionManager:159 - Session updated: 52914ccc-8342-43ba-a367-5cce8d6022f9
+2016-12-11 16:26:28 DEBUG HbsParserFactory:70 - About to parse: /templates/page3.html
+2016-12-11 16:26:28 DEBUG HbsParserFactory:82 - Building AST
+2016-12-11 16:26:28 DEBUG HbsParserFactory:108 - Creating templates
+2016-12-11 16:26:28 INFO  AbstractHttpHandler:72 - Executing request RequestContext [uri=/app/page3, username=user3, data=null] with response ResponseContext [data={"username":"user3"}, status=OK, sessionId=null] 
+2016-12-11 16:26:30 INFO  SessionManager:159 - Session updated: 52914ccc-8342-43ba-a367-5cce8d6022f9
+2016-12-11 16:26:30 INFO  AbstractHttpHandler:72 - Executing request RequestContext [uri=/app/page3, username=user3, data=close=Close] with response ResponseContext [data={"username":"user3"}, status=UNAUTHORIZED, sessionId=null] 
+2016-12-11 16:26:47 INFO  SessionManager:51 - Session created: 0f2993fc-06c3-48e6-963c-6665a71dbc3c
+2016-12-11 16:26:47 ERROR AbstractHttpHandler:74 - Resource access unauthorized 
+2016-12-11 16:27:00 INFO  SessionManager:159 - Session updated: 0f2993fc-06c3-48e6-963c-6665a71dbc3c
+2016-12-11 16:27:00 ERROR AbstractHttpHandler:74 - Resource access unauthorized 
+2016-12-11 16:27:00 INFO  SessionManager:159 - Session updated: 0f2993fc-06c3-48e6-963c-6665a71dbc3c
+2016-12-11 16:27:00 ERROR AbstractHttpHandler:74 - Resource access unauthorized 
+2016-12-11 16:27:04 INFO  SessionManager:159 - Session updated: 0f2993fc-06c3-48e6-963c-6665a71dbc3c
+2016-12-11 16:27:04 DEBUG HbsParserFactory:70 - About to parse: /templates/page1.html
+2016-12-11 16:27:04 DEBUG HbsParserFactory:82 - Building AST
+2016-12-11 16:27:04 DEBUG HbsParserFactory:108 - Creating templates
+2016-12-11 16:27:04 INFO  AbstractHttpHandler:72 - Executing request RequestContext [uri=/app/page1, username=user1, data=null] with response ResponseContext [data={"username":"user1"}, status=OK, sessionId=null] 
