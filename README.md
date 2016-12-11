@@ -8,7 +8,7 @@ Prerequisites
 Installation
 ------------
 
-Clone repository from Github: git clone ....
+Clone repository from Github: https://github.com/dralluy/test-web-application.git
 Generate application: mvn install
 Running test: mvn test
 
