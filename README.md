@@ -16,7 +16,7 @@
 1. Go to target directory
 2. java -jar test-web-application.jar
 
-The web server is waiting at localhost:8000
+The web server is listening at localhost:8000
 There are 3 default users: user1/password1, user2/password2, user3/password3
 Roles: user1 -> PAGE_1, ADMIN
 	   user2 -> PAGE_2
