@@ -39,7 +39,7 @@ Get user:     GET http://localhost:8000/api/users/user/{username}
 
 Only ADMIN role:
 Create user:  POST http://localhost:8000/api/users 
-			  payload -> {"username":"username", "password":password", "roles":"comma-delimitted rolenames"}
+	      payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
 Delete user:  DELETE http://localhost:8000/users/user/{username}
 Update user:  PUT http://localhost:8000/users/user/{username}
-			  payload -> {"username":"username", "password":password", "roles":"comma-delimitted rolenames"}
+			  payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
