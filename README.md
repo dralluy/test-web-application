@@ -50,4 +50,4 @@ There will be an authetication form if session is needed, using basic authentica
 6. Generic templating (default implementation with Handlebars)
 7. Use of filters
 8. H2 in-memory database
-9. SL4F + LOG4J
+9. Sl4j + Log4j
