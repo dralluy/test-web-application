@@ -28,7 +28,7 @@ http://localhost:8000/app/page1
 http://localhost:8000/app/page2
 http://localhost:8000/app/page3
 
-There will be an authetication form if session is needed.
+There will be an authetication form if session is needed, using basic authentication.
 
 ## Acces to Rest API
 
@@ -37,6 +37,17 @@ There will be an authetication form if session is needed.
 2. Get user:     GET http://localhost:8000/api/users/user/{username}
 
 ### Only ADMIN role:
-1. Create user:  POST http://localhost:8000/api/users payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
+1. Create user:  POST http://localhost:8000/api/users  JSON payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
 2. Delete user:  DELETE http://localhost:8000/users/user/{username}
-3. Update user:  PUT http://localhost:8000/users/user/{username} payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
+3. Update user:  PUT http://localhost:8000/users/user/{username} JSON payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
+
+## Main Features
+1. Generic handler
+2. MVC handler and Rest handler
+3. Session Manager with session timeout
+4. Authentication and authorization managers
+5. Request, response and controller abstractions
+6. Generic templating (default implementation with Handlebars)
+7. Use of filters
+8. H2 in-memory database
+9. SL4F + LOG4J
