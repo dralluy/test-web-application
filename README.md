@@ -42,7 +42,7 @@ There will be an authetication form if session is needed, using basic authentica
 3. Update user:  PUT http://localhost:8000/users/user/{username} JSON payload -> {"username":"username", "password":password", "roles":"comma-delimited rolenames"}
 
 ## Main Features
-1. Generic handler
+1. Abstract handler
 2. MVC handler and Rest handler
 3. Session Manager with session timeout
 4. Authentication and authorization managers
